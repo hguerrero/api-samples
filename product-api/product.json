@@ -8,7 +8,40 @@
   "paths": {
     "/products": {
       "get": {
-        "description": "Get all products list"
+        "description": "Get all products list",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/product"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "product": {
+        "title": "Root Type for product",
+        "description": "The root of the product type's schema.",
+        "type": "object",
+        "properties": {
+          "id": {
+            "description": "product id",
+            "type": "string"
+          },
+          "title": {
+            "description": "product title",
+            "type": "string"
+          }
+        }
       }
     }
   }
