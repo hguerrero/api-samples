@@ -12,6 +12,7 @@
         "description": "Get all products",
         "responses": {
           "200": {
+            "description": "Returns Array of products",
             "schema": {
               "type": "array",
               "items": {
