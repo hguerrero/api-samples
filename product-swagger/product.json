@@ -1,1 +1,41 @@
-{"info":{"title":"Product - 2.0","description":"Product Swagger version","version":"1.0.0"},"swagger":"2.0"}
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Product - 2.0",
+    "description": "Product Swagger version",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/products": {
+      "get": {
+        "summary": "Get All Products",
+        "description": "Get all products",
+        "responses": {
+          "200": {
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "#/definitions/product"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "product": {
+      "title": "Root Type for product",
+      "description": "The root of the product type's schema.",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
