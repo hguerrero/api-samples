@@ -1,0 +1,47 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Product - 2.0",
+		"_postman_id": "697e3f52-83e2-1469-8c2c-2fff982c960e",
+		"description": "version=0.1 - Product Swagger version",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "products",
+			"description": "Folder for products",
+			"item": [
+				{
+					"name": "Get All Products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": "http:///products",
+						"description": "Get all products"
+					},
+					"response": [
+						{
+							"id": "6d423add-c620-4e3d-8599-0ea03d16f18e",
+							"name": "Get All Products",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {},
+								"url": "http:///products"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"_postman_previewtype": "parsed",
+							"header": [],
+							"cookie": [],
+							"responseTime": 0,
+							"body": "[\n    {\n      \"id\": 632910392,\n      \"title\": \"IPod Nano - 8GB\"\n    },\n    {\n      \"id\": 921728736,\n      \"title\": \"IPod Touch 8GB\"\n    }\n]"
+						}
+					]
+				}
+			]
+		}
+	]
+}
