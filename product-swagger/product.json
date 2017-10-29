@@ -3,6 +3,10 @@
   "info": {
     "title": "Product - 2.0",
     "description": "Product Swagger version",
+    "license": {
+      "name": "Apache 2.0",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0"
+    },
     "version": "1.0.0"
   },
   "paths": {
@@ -22,6 +26,27 @@
           }
         }
       }
+    },
+    "/products/:id": {
+      "get": {
+        "summary": "Get Product by ID",
+        "description": "Get product with ID :id",
+        "responses": {
+          "200": {
+            "description": "The product with ID :id",
+            "schema": {
+              "$ref": "#/definitions/product"
+            }
+          }
+        }
+      },
+      "parameters": [
+        {
+          "name": "id",
+          "in": "query",
+          "type": "string"
+        }
+      ]
     }
   },
   "definitions": {
