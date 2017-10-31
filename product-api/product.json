@@ -23,6 +23,24 @@
             }
           }
         }
+      },
+      "post": {
+        "summary": "Add new product",
+        "description": "The details of the products to be added",
+        "responses": {
+          "201": {
+            "description": "New product added"
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemasproduct"
+              }
+            }
+          }
+        }
       }
     }
   },
