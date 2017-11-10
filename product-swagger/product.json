@@ -14,6 +14,7 @@
       "get": {
         "summary": "Get All Products",
         "description": "Get all products",
+        "operationId": "getAllProducts",
         "responses": {
           "200": {
             "description": "Returns Array of products",
@@ -31,6 +32,7 @@
       "get": {
         "summary": "Get Product by ID",
         "description": "Get product with ID :id",
+        "operationId": "getProductByID",
         "responses": {
           "200": {
             "description": "The product with ID :id",
