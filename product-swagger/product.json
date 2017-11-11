@@ -9,6 +9,17 @@
     },
     "version": "1.0.0"
   },
+  "host": "secureapi-staging.amp.ocp.middleware.pro",
+  "basePath": "/api",
+  "schemes": [
+    "http"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
   "paths": {
     "/products": {
       "get": {
