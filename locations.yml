@@ -1,0 +1,46 @@
+---
+openapi: 3.0.0
+info:
+  title: Locations
+  description: Locations API
+  version: 1.0.0
+paths:
+  /locations:
+    get:
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/location'
+              examples:
+                all:
+                  value: |-
+                    [  {
+                        "id": 1,
+                        "name": "headquartes",
+                        "location": [
+                          90,
+                          -91
+                        ],
+                        "type": "headquarter"
+                      }]
+components:
+  schemas:
+    location:
+      title: Root Type for location
+      description: The root of the location type's schema.
+      type: object
+      properties:
+        id:
+          format: int32
+          type: integer
+        name:
+          type: string
+        location:
+          type: array
+          items: {}
+        type:
+          type: string
